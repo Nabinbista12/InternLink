@@ -4,7 +4,7 @@ A full-stack social media application built with MERN stack that replicates core
 
 ## 🚀 Live Demo
 
-**Live Demo URL:** 
+**Live Demo URL:** https://internlink-1.onrender.com
 
 **GitHub Repository:** https://github.com/Nabinbista12/InternLink.git
 
@@ -230,14 +230,14 @@ MONGO_URI="your_mongodb_connection_string_here"
 **Example for MongoDB Atlas:**
 ```env
 PORT=3000
-JWT_SECRET="your_secure_jwt_secret_key"
-MONGO_URI="mongodb+srv://username:password@cluster0.xxxxx.mongodb.net/linkedin?retryWrites=true&w=majority"
+JWT_SECRET="create_secret_key_for_better_safety"
+MONGO_URI="mongodb+srv://username:password@cluster0.xxxxx.mongodb.net/internLink?retryWrites=true&w=majority"
 ```
 
 **Example for Local MongoDB:**
 ```env
 PORT=3000
-JWT_SECRET="your_secure_jwt_secret_key"
+JWT_SECRET="create_secret_key_for_better_safety"
 MONGO_URI="mongodb://127.0.0.1:27017/linkedin"
 ```
 
@@ -253,6 +253,8 @@ MONGO_URI="mongodb://127.0.0.1:27017/linkedin"
 - [ ] Password reset functionality
 - [ ] Rich text editor for posts
 - [ ] Post deletion and editing
+- [ ] Reply to the post
+- [ ] Edit delete to the post
 
 ## 🤝 Contributing
 
@@ -262,9 +264,11 @@ MONGO_URI="mongodb://127.0.0.1:27017/linkedin"
 4. Push to the branch
 5. Open a Pull Request
 
-## 📄 License
+## License
 
 This project is open source and available under the [MIT License](LICENSE).
+
+© 2025 Nabin Bista
 
 ## 👨‍💻 Developer
 

@@ -4,9 +4,9 @@ A full-stack social media application built with MERN stack that replicates core
 
 ## 🚀 Live Demo
 
-**Live Demo URL:** [Add your deployed app URL here]
+**Live Demo URL:** 
 
-**GitHub Repository:** [Add your GitHub repo URL here]
+**GitHub Repository:** https://github.com/Nabinbista12/InternLink.git
 
 ## 🛠️ Tech Stack
 
@@ -129,12 +129,19 @@ linkedin-clone/
    ```env
    PORT=3000
    JWT_SECRET="your_jwt_secret_key_here_make_it_long_and_secure"
+   MONGO_URI="your_mongodb_connection_string_here"
    ```
 
 4. **Database Setup**
-   - Install MongoDB locally or use MongoDB Atlas
-   - The app connects to `mongodb://127.0.0.1:27017/linkedin` by default
-   - Update the connection string in `app.js` if needed
+   - **Option 1: MongoDB Atlas (Recommended)**
+     - Create a free account at [MongoDB Atlas](https://www.mongodb.com/atlas)
+     - Create a new cluster
+     - Get your connection string and add it to the `MONGO_URI` variable in `.env`
+     - Example: `mongodb+srv://username:password@cluster0.xxxxx.mongodb.net/linkedin?retryWrites=true&w=majority`
+   
+   - **Option 2: Local MongoDB**
+     - Install MongoDB locally
+     - Use local connection string: `mongodb://127.0.0.1:27017/linkedin`
 
 5. **Start the backend server**
    ```bash
@@ -217,6 +224,21 @@ linkedin-clone/
 ```env
 PORT=3000
 JWT_SECRET="your_secure_jwt_secret_key"
+MONGO_URI="your_mongodb_connection_string_here"
+```
+
+**Example for MongoDB Atlas:**
+```env
+PORT=3000
+JWT_SECRET="your_secure_jwt_secret_key"
+MONGO_URI="mongodb+srv://username:password@cluster0.xxxxx.mongodb.net/linkedin?retryWrites=true&w=majority"
+```
+
+**Example for Local MongoDB:**
+```env
+PORT=3000
+JWT_SECRET="your_secure_jwt_secret_key"
+MONGO_URI="mongodb://127.0.0.1:27017/linkedin"
 ```
 
 ## 🎯 Future Enhancements
@@ -246,10 +268,9 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## 👨‍💻 Developer
 
-**Your Name**
-- GitHub: [Your GitHub Profile]
-- LinkedIn: [Your LinkedIn Profile]
-- Email: [Your Email]
+**Nabin Bista**
+- GitHub: https://github.com/Nabinbista12/InternLink.git
+- LinkedIn: https://www.linkedin.com/in/nabin-bista/
 
 ---
 

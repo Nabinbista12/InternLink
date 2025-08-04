@@ -12,8 +12,12 @@ const port = process.env.PORT || 3000;
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: [
+      // "http://localhost:5173", // for local development
+      "https://internlink-1.onrender.com" // update this with your actual frontend URL
+    ],
     methods: ["GET", "POST", "DELETE", "PUT"],
+    credentials: true
   })
 );
 

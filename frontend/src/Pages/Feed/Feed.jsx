@@ -8,7 +8,7 @@ export default function Feed() {
 
   // Fetch posts on mount
   useEffect(() => {
-    axios.get("http://localhost:3000/api/posts/getpost")
+    axios.get("https://internlink-j4e5.onrender.com/api/posts/getpost")
       .then(res => setPosts(res.data))
       .catch(err => console.error(err));
   }, []);
@@ -21,7 +21,7 @@ export default function Feed() {
     try {
       // You must send JWT token in headers (assuming it's stored in localStorage)
       const token = localStorage.getItem("token");
-      const res = await axios.post("http://localhost:3000/api/posts/save", { text }, {
+      const res = await axios.post("https://internlink-j4e5.onrender.com/api/posts/save", { text }, {
         headers: { Authorization: `Bearer ${token}` }
       });
 

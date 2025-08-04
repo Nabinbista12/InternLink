@@ -3,7 +3,8 @@ import axios from "axios";
 export const RegisterAuth = async (formData) => {
   try {
     const result = await axios.post(
-      "http://localhost:3000/api/auth/register",
+      // "http://localhost:3000/api/auth/register",
+      "https://internlink-j4e5.onrender.com/api/auth/register",
       formData
     );
     console.log(result);
@@ -15,7 +16,7 @@ export const RegisterAuth = async (formData) => {
 export const LoginAuth = async (formData) => {
   try {
     const response = await axios.post(
-      "http://localhost:3000/api/auth/login",
+      "https://internlink-j4e5.onrender.com/api/auth/login",
       formData
     );
 
@@ -41,7 +42,8 @@ export const getProfile = async () => {
     throw new Error("No authentication token found");
   }
 
-  const res = await fetch("http://localhost:3000/api/user/profile", {
+  // const res = await fetch("http://localhost:3000/api/user/profile", {
+  const res = await fetch("https://internlink-j4e5.onrender.com/api/user/profile", {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
@@ -59,7 +61,7 @@ export const getProfile = async () => {
 
 // Get any user's profile by user ID (public view)
 export const getUserProfile = async (userId) => {
-  const res = await fetch(`http://localhost:3000/api/user/profile/${userId}`, {
+  const res = await fetch(`https://internlink-j4e5.onrender.com/api/user/profile/${userId}`, {
     method: "GET",
     headers: {
       "Content-Type": "application/json",
@@ -82,7 +84,7 @@ export const updateProfile = async (profileData) => {
     throw new Error("No authentication token found");
   }
 
-  const res = await fetch("http://localhost:3000/api/user/profile", {
+  const res = await fetch("https://internlink-j4e5.onrender.com/api/user/profile", {
     method: "PUT",
     headers: {
       "Content-Type": "application/json",
